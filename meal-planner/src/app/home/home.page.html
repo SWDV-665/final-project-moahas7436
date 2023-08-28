@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Meal Planner
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <ion-button expand="full" routerLink="/meals/Monday" [routerLinkActive]="'active'" routerDirection="forward">Monday</ion-button>
+    <ion-button expand="full" routerLink="/meals/Tuesday" [routerLinkActive]="'active'" routerDirection="forward">Tuesday</ion-button>
+    <ion-button expand="full" routerLink="/meals/Wednesday" [routerLinkActive]="'active'" routerDirection="forward">Wednesday</ion-button>
+    <ion-button expand="full" routerLink="/meals/Thursday" [routerLinkActive]="'active'" routerDirection="forward">Thursday</ion-button>
+    <ion-button expand="full" routerLink="/meals/Friday" [routerLinkActive]="'active'" routerDirection="forward">Friday</ion-button>
+    <ion-button expand="full" routerLink="/meals/Saturday" [routerLinkActive]="'active'" routerDirection="forward">Saturday</ion-button>
+    <ion-button expand="full" routerLink="/meals/Sunday" [routerLinkActive]="'active'" routerDirection="forward">Sunday</ion-button>
+
+    <ion-button expand="full" routerLink="/shopping-list" [routerLinkActive]="'active'" routerDirection="forward">Go to Shopping List</ion-button>
+</ion-content>

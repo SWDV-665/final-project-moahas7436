@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      {{ day }}'s Meal Plan
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- Meal input -->
+  <ion-item>
+    <ion-label position="floating">Describe your meal for {{ day }}</ion-label>
+    <ion-input [(ngModel)]="mealDescription"></ion-input>
+  </ion-item>
+
+  <!-- Display the saved meal -->
+  <div *ngIf="mealDescription">
+    <h3>Planned Meal:</h3>
+    <p>{{ mealDescription }}</p>
+  </div>
+
+  <!-- Displaying the captured meal photo -->
+  <div *ngIf="photo">
+    <h3>Meal Image:</h3>
+    <img [src]="photo" alt="Meal photo">
+  </div>
+
+  <!-- Button to capture the meal photo -->
+  <ion-button expand="full" (click)="takePicture()">Capture Meal Photo</ion-button>
+
+  <!-- Save Meal Plan Button -->
+  <ion-button expand="full" (click)="saveMeal()">Save Meal Plan</ion-button>
+
+  <!-- Button to go back to the main menu -->
+  <ion-button expand="full" routerLink="/home">Back to Main Menu</ion-button>
+
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "meal-planner",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
